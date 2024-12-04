@@ -10,8 +10,8 @@ export default function Question2() {
 
     useEffect(() => {
         function speak(){
-            let message = "What roles are you interested in among Tech, Marketing, Design, HR, Ops and others?";
-            let utterance = new SpeechSynthesisUtterance(message);
+            const message = "What roles are you interested in among Tech, Marketing, Design, HR, Ops and others?";
+            const utterance = new SpeechSynthesisUtterance(message);
             speechSynthesis.speak(utterance);
         }
         speak();
@@ -47,7 +47,7 @@ export default function Question2() {
         }} className="text-white bg-indigo-700 hover:bg-white hover:text-indigo-700 border-indigo-700 border font-semibold rounded-lg text-sm px-5 py-2.5 me-2 mb-2">Complete test</button>
 
         <p className="text-sm text-gray-400 mt-4">
-            Press 'Enter' for Saving and Next
+            Press &apos;Enter&apos; for Saving and Next
         </p>
     </div>
 }

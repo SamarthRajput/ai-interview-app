@@ -1,7 +1,6 @@
 "use client"
 import { useRouter } from "next/navigation"
 import { useEffect } from "react";
-import { start } from "repl";
 
 export const PermissionScreen = () => {
 
@@ -12,7 +11,7 @@ export const PermissionScreen = () => {
 
         const startScreen = async () => {
             try {
-                const stream = navigator.mediaDevices.getDisplayMedia({
+                await navigator.mediaDevices.getDisplayMedia({
                     video: true
                 })
             }
