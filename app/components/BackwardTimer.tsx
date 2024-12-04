@@ -9,12 +9,11 @@ export default function BackwardTimer() {
                 setTimeLeft((prev) => prev - 1);
             }, 1000);
 
-            return () => clearInterval(timer); // Cleanup interval on component unmount
+            return () => clearInterval(timer);
         }
     }, [timeLeft]);
 
-    // @ts-ignore
-    const formatTime = (time) => {
+    const formatTime = (time: number): string => {
         const minutes = Math.floor(time / 60);
         const seconds = time % 60;
 
