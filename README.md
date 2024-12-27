@@ -1,3 +1,4 @@
+
 ## AI-INTERVIEW-APP
 
 Created an AI-interview app
@@ -19,3 +20,8 @@ It has the following features:-
 	`npm install`
 2. Now run the command to start the project locally 
 	`npm run dev`
+
+ 
+# Video of the project
+
+https://github.com/user-attachments/assets/c611c172-c567-4201-a290-bce3ee82af22
